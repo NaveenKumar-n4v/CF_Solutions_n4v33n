@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////*
+//TIME FOR SOME HOBBY
+/////////////////////////////////////////
+//// Solely coded by n4v33n
+#include <bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define ll long long
+#ifndef ONLINE_JUDGE
+#define debug(x) cerr<<#x<<" "<<x<<endl;
+#else
+#define debug(x)
+#endif
+//__gcd inbuilt fn for gcd
+
+void solve() {
+	ll u, v;
+	cin >> u >> v;
+	cout << -u*u << " " << v*v;
+	cout << endl;
+
+
+}
+
+signed main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+#ifndef ONLINE_JUDGE
+	freopen("error.txt", "w", stderr);
+#endif
+	ll t = 1;
+	cin >> t;
+	while (t--) solve();
+	return 0;
+}
