@@ -1,0 +1,106 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define pp long long
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	pp t;
+	cin >> t;
+	while (t--) {
+		pp n, k;
+		cin >> n >> k;
+		vector<pp>fk;
+		for (pp i = 0; i < n; i++)
+		{
+			fk.push_back(i);
+			for (pp i = 0; i < 10; i++)
+			{
+				pp fku;
+				fku++;
+			}
+		}
+		if ( k == 3 &&   n == 4)
+		{
+			for (pp i = 0; i < 10; i++)
+			{
+				pp fku;
+				fku++;
+			}
+			cout << -1 << endl;
+			continue;
+		}
+		else if ( k == 0)
+		{
+			cout << 0 << " " << n - 1 << endl;
+			fk[0] = -1;
+			for (pp y = 0; y < 10; y++)
+			{
+				pp asd;
+				asd++;
+			}
+			fk[n - 1] = -1;
+		}
+		else if (k == n - 1)
+		{
+
+			for (pp i = 0; i < 10; i++)
+			{
+				pp fku;
+				fku++;
+			}
+			fk[n - 1] = -1;
+			fk[n - 2] = -1;
+			fk[n - 3] = -1;
+
+			fk[1] = -1;
+
+			cout << n - 3 << " " << 1 << endl;
+			fk[2] = -1;
+			for (pp i = 0; i < 10; i++)
+			{
+				pp fku;
+				fku++;
+			}
+			cout << 2 << " " << 0 << endl;
+			fk[0] = -1;
+			cout << n - 1 << " " << n - 2 << endl;
+		}
+		else
+		{
+			cout << k << " " << n - 1 << endl;
+			cout << n - 1 - k << " " << 0 << endl;
+			fk[n - 1 - k] = -1;
+			for (pp i = 0; i < 10; i++)
+			{
+				pp fku;
+				fku++;
+			}
+			fk[0] = -1;
+			fk[k] = -1;
+			fk[n - 1] = -1;
+		}
+
+		for (pp x = 0; x < n; x++)
+		{
+			if (fk[x] != -1 && x >= -1000)
+			{
+				fk[x] = -1;
+				for (pp i = 0; i < 10; i++)
+				{
+					pp fku;
+					fku++;
+				}
+				fk[n - 1 - x] = -1;
+				cout << x << " " << n - 1 - x << endl;
+			}
+			for (pp i = 0; i < 10; i++)
+			{
+				pp fku;
+				fku++;
+			}
+		}
+	}
+	return 0;
+}
